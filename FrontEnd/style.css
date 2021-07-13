@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+.header {
+  width: 100%;
+  height: 80px;
+  display: block;
+  background-color: #101010;
+}
+
+.inner_header {
+  width: 90%;
+  height: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+.logo_container {
+  height: 100%;
+  display: table;
+  float: left;
+  padding-left: 10px;
+}
+
+.logo_container h1 {
+  color: aliceblue;
+  height: 100%;
+  display: table-cell;
+  vertical-align: middle;
+  font-family: "Montserrat", sans-serif;
+  font-size: 32px;
+  font-weight: 100;
+}
+
+.logo_container h1 span {
+  font-weight: 800;
+}
+
+.navigation {
+  float: right;
+  height: 100%;
+}
+
+.navigation a {
+  height: 100%;
+  display: table;
+  float: left;
+  padding: 0px 20px;
+}
+
+.navigation a:last-child {
+  padding-right: 0;
+}
+
+.navigation a li {
+  display: table-cell;
+  vertical-align: middle;
+  height: 100%;
+  color: aliceblue;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+}
+
+.welcomebox {
+  display: flex;
+  width: 70%;
+  height: 100px;
+  background-color: rgb(226, 233, 253);
+  border: 5px solid black;
+  position: relative;
+  margin: 20px auto;
+  position: relative;
+}
+
+.welcomebox h1 {
+  color: black;
+  height: 100%;
+  display: flex;
+  vertical-align: middle;
+  font-family: "Montserrat", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+
+  vertical-align: middle;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+.main_block {
+  display: block;
+  width: 70%;
+  height: 1000px;
+  margin: 20px auto;
+  padding: 20px;
+
+  border: 3px solid rebeccapurple;
+  padding: 20px;
+}
+
+.float_container {
+  width: 45%;
+  float: left;
+  border: 2px solid red;
+}
+
+.recent_activites {
+  display: block;
+  height: 90%;
+  background-color: white;
+  float: left;
+}
+
+.announcements {
+  display: block;
+  height: 90%;
+  background-color: yellow;
+  float: right;
+}
+
+/* THIS IS WHERE THE OLD STUFF STARTS */
+
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+.burger div {
+  width: 30px;
+  height: 5px;
+  background-color: aliceblue;
+  margin: 5px;
+
+  transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 710px) {
+  body {
+    overflow-x: hidden;
+  }
+  .navigation {
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 8vh;
+    background-color: #101010;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+
+    transform: translateX(100%);
+    transition: transform 0.25s ease-in;
+  }
+  .navigation li {
+    opacity: 0;
+  }
+  .burger {
+    display: block;
+    float: right;
+    padding-top: 23px;
+  }
+}
+
+.nav-active {
+  transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2 {
+  opacity: 0;
+}
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
