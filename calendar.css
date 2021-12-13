@@ -372,6 +372,9 @@ tr{
     display: none;
   }
 
+  .calendar-day .cal-link{
+    font-size: 10px;
+  }
 
   .main-content{
     transition: margin-left 300ms;
@@ -431,6 +434,10 @@ tr{
   header h2{
     display: flex;
     align-items: center;
+  }
+
+  .calendar-day .cal-link{
+    font-size: 10px;
   }
 /*
   header h2 label {
