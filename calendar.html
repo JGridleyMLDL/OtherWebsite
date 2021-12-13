@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewpoint" content="width=device-width,initial-scale=1,maximum-scale=1">
+    <title>Jared Gridley's Calendar</title>
+
+    <link rel = "icon" href = "img/rpi_logo.png" type = "image/x-icon">
+    <link rel="stylesheet" href="calendar.css">
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+  </head>
+  <body>
+
+    <input type="checkbox" id="nav-toggle" >
+    <div class="sidebar">
+      <div class="sidebar-brand">
+        <h2><span class = "las la-shoe-prints"></span> <span>RPI XCTF</span></h2>
+      </div>
+
+      <div class="sidebar-menu">
+        <ul>
+          <li>
+            <a href="dashboard.html" class ="" ><span class = "las la-sitemap"></span>
+              <span>Dashboard</span></a>
+          </li>
+
+          <li>
+            <a href="calendar.html" class ="active"><span class = "las la-calendar"></span>
+              <span>Calendar</span></a>
+          </li>
+
+          <li>
+            <a href="leaderboards.html" class="" ><span class = "las la-chart-bar"></span>
+              <span>Leaderboards</span></a>
+          </li>
+
+          <li>
+            <a href=""><span class = "las la-map"></span>
+              <span>Heatmap</span></a>
+          </li>
+
+          <li>
+            <a href=""><span class = "las la-brain"></span>
+              <span>Health Analytics</span></a>
+          </li>
+
+          <li>
+            <a href=""><span class = "las la-certificate"></span>
+              <span>Records</span></a>
+          </li>
+
+          <li>
+            <a href=""><span class = "las la-newspaper"></span>
+              <span>News</span></a>
+          </li>
+
+          <li>
+            <a href=""><span class = "las la-users"></span>
+              <span>Users</span></a>
+          </li>
+
+          <li>
+            <a href=""><span class = "las la-tools"></span>
+              <span>Settings</span></a>
+          </li>
+
+          <li>
+            <a href="login.html"><span class = "las la-undo"></span>
+              <span>Log Out</span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="main-content">
+      <header class="header_class">
+            <h2>
+              <label for="nav-toggle">
+                <span class = "las la-bars"></span>
+              </label>
+              Calendar
+            </h2>
+
+            <div class="search-wrapper">
+              <span class="las la-search"></span>
+              <input type="search" placeholder="Search Here" />
+            </div>
+
+            <div class="user-wrapper">
+              <img src="img/Gridley_Jared.jpg" width = "40px" height="40px" alt="">
+              <div>
+                  <h4>Jared Gridley</h4>
+                  <small>Athlete (2023)</small>
+              </div>
+            </div>
+      </header>
+
+      <main>
+
+        <div class="recent-grid">
+            <div class="activites">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Jared Gridley's Calendar</h3>
+                        <!--<button>See all <span class="las la-arrow-right"></span></button>-->
+                    </div>
+                    <div class="card-header">
+                        <h4>December 2021</h4>
+                        <!--<button>See all <span class="las la-arrow-right"></span></button>-->
+                    </div>
+
+                    <div class="card-body">
+                      <div class="control">
+                        <div class="selectors">
+                          <form action="" method="get">
+                            <button type="back" name="last_month"><i class="las la-angle-left fa-3x"></i><span>Last Month</span></button>
+
+
+                            <button type="today" name="present">Today</button>
+
+                            <button type="next" name="next_month"><span>Next Month</span><i class="las la-angle-right fa-3x"></i></button>
+
+                          </form>
+
+                        </div>
+                      </div>
+
+                      <div class="table-responsive">
+
+                        <table class="calendar"width = "100%">
+                            <thead>
+                                <tr>
+                                  <td width="12.5%">Monday</td>
+                                  <td width="12.5%">Tuesday</td>
+                                  <td width="12.5%">Wednesday</td>
+                                  <td width="12.5%">Thursday</td>
+                                  <td width="12.5%">Friday</td>
+                                  <td width="12.5%">Saturday</td>
+                                  <td width="12.5%">Sunday</td>
+                                  <td width="12.5%">Totals</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                              <tr class="calendar-week">
+                                <td class="calendar-off"><div class="calendar-num">29</div><div class="add-box"><a href="#"><button type="button" class="close" name="Add Workout">+</button></a></div></td>
+                                <td class="calendar-off"><div class="calendar-num">30</div><div class="add-box"><a href="#"><button type="button" class="close" name="Add Workout">+</button></a></div></td>
+                                <td class="calendar-off"><div class="calendar-num">31</div><div class="add-box"><a href="#"><button type="button" class="close" name="Add Workout">+</button></a></div></td>
+                                <td class="calendar-day"><div class="calendar-num">1</div><div class="add-box"><a href="#"><button type="button" class="close" name="Add Workout">+</button></a></div></td>
+                                <td class="calendar-day"><div class="calendar-num">2</div><div class="add-box"><a href="#"><button type="button" class="close" name="Add Workout">+</button></a></div></td>
+                                <td class="calendar-day"><div class="calendar-num">3</div><div class="add-box"><a href="#"><button type="button" class="close" name="Add Workout">+</button></a></div></td>
+                                <td class="calendar-day"><div class="calendar-num">4</div><div class="add-box"><a href="#"><button type="button" class="close" name="Add Workout">+</button></a></div></td>
+                                <td class="calendar-tot"></td>
+                              </tr>
+
+
+                              <tr class="calendar-week">
+                                <td class="calendar-day"><div class="calendar-num">5</div><div class="add-box"><a href="#"><button type="button" class="close" name="Add Workout">+</button></a></div><div class="run_log">
+                                  <a href="#"><span class="cal-link">Run: 5.02 mi 35:02</span></a>
+                                </div>
+                              </td>
+                                <td class="calendar-day"><div class="calendar-num">6</div><div class="add-box"><a href="#"><button type="button" class="close" name="Add Workout">+</button></a></div><div class="run_log">
+                                  <a href="#"><span class="cal-link">Run: 12.71 mi 1:10:57</span></a>
+                                </div>
+                              </td>
+                                <td class="calendar-day"><div class="calendar-num">7</div><div class="add-box"><a href="#"><button type="button" class="close" name="Add Workout">+</button></a></div>
+                                  <div class="run_log">
+                                    <a href="#"><span class="cal-link">Run: 12.02 mi 1:30:45</span></a>
+                                  </div></td>
+                                <td class="calendar-day"><div class="calendar-num">8</div><div class="add-box"><a href="#"><button type="button" class="close" name="Add Workout">+</button></a></div>
+                                  <div class="run_log">
+                                    <a href="#"><span class="cal-link">Run: 5.11 mi 35:13</span></a>
+                                  </div></td>
+                                <td class="calendar-day"><div class="calendar-num">9</div><div class="add-box"><a href="#"><button type="button" class="close" name="Add Workout">+</button></a></div><div class="run_log">
+                                  <a href="#"><span class="cal-link">Run: 8.32 mi 1:00:06</span></a>
+                                </div>
+                              </td>
+                                <td class="calendar-day"><div class="calendar-num">10</div><div class="add-box"><a href="#"><button type="button" class="close" name="Add Workout">+</button></a></div><div class="run_log">
+                                  <a href="#"><span class="cal-link">Run: 5.07 mi 36:12</span></a>
+                                </div>
+                              </td>
+                                <td class="calendar-day"><div class="calendar-num">11</div><div class="add-box"><a href="#"><button type="button" class="close" name="Add Workout">+</button></a></div><div class="run_log">
+                                  <a href="#"><span class="cal-link">Run: 15.07 mi 1:45:02</span></a>
+                                </div></td>
+                                <td class="calendar-tot"><div class="run_log">
+                                  <a href="#"><span class="cal-link">Run: 63.32 mi 7:22:05</span></a>
+                                </div></td>
+                              </tr>
+
+                              <tr class="calendar-week">
+                                <td class="calendar-day"><div class="calendar-num">12</div><div class="add-box"><a href="#"><button type="button" class="close" name="Add Workout">+</button></a></div>
+                                <div class="run_log">
+                                  <a href="#"><span class="cal-link">Run: 5.07 mi 35:21</span></a>
+                                </div></td>
+                                <td class="calendar-day"><div class="calendar-num">13</div><div class="add-box"><a href="#"><button type="button" class="close" name="Add Workout">+</button></a></div>
+                                <div class="run_log">
+                                  <a href="#"><span class="cal-link">Run: 15.07 mi 1:35:21</span></a>
+                                </div></td>
+                                <td class="calendar-day"><div class="calendar-num">14</div><div class="add-box"><a href="#"><button type="button" class="close" name="Add Workout">+</button></a></div>
+                                  <div class="run_log">
+                                    <a href="#"><span class="cal-link">Run: 7.31 mi 55:21</span></a>
+                                  </div></td>
+                                <td class="calendar-day"><div class="calendar-num">15</div><div class="add-box"><a href="#"><button type="button" class="close" name="Add Workout">+</button></a></div>
+                                  <div class="run_log">
+                                    <a href="#"><span class="cal-link">Run: 4.81 mi 35:11</span></a>
+                                  </div>
+                                  <div class="run_log">
+                                    <a href="#"><span class="cal-link">Run: 5.02 mi 35:02</span></a>
+                                  </div></td>
+                                <td class="calendar-tod"><div class="calendar-num">16</div><div class="add-box"><a href="#"><button type="button" class="close" name="Add Workout">+</button></a></div></td>
+                                <td class="calendar-day"><div class="calendar-num">17</div><div class="add-box"><a href="#"><button type="button" class="close" name="Add Workout">+</button></a></div></td>
+                                <td class="calendar-day"><div class="calendar-num">18</div><div class="add-box"><a href="#"><button type="button" class="close" name="Add Workout">+</button></a></div></td>
+                                <td class="calendar-tot">
+                                  <div class="run_log">
+                                    <a href="#"><span class="cal-link">Run: 37.28 mi 4:11:16</span></a>
+                                  </div></td>
+                              </tr>
+
+                              <tr class="calendar-week">
+                                <td class="calendar-day"><div class="calendar-num">19</div><div class="add-box"><a href="#"><button type="button" class="close" name="Add Workout">+</button></a></div></td>
+                                <td class="calendar-day"><div class="calendar-num">20</div><div class="add-box"><a href="#"><button type="button" class="close" name="Add Workout">+</button></a></div></td>
+                                <td class="calendar-day"><div class="calendar-num">21</div><div class="add-box"><a href="#"><button type="button" class="close" name="Add Workout">+</button></a></div></td>
+                                <td class="calendar-day"><div class="calendar-num">22</div><div class="add-box"><a href="#"><button type="button" class="close" name="Add Workout">+</button></a></div></td>
+                                <td class="calendar-day"><div class="calendar-num">23</div><div class="add-box"><a href="#"><button type="button" class="close" name="Add Workout">+</button></a></div></td>
+                                <td class="calendar-day"><div class="calendar-num">24</div><div class="add-box"><a href="#"><button type="button" class="close" name="Add Workout">+</button></a></div></td>
+                                <td class="calendar-day"><div class="calendar-num">25</div><div class="add-box"><a href="#"><button type="button" class="close" name="Add Workout">+</button></a></div></td>
+                                <td class="calendar-tot"></td>
+                              </tr>
+
+                              <tr class="calendar-week">
+                                <td class="calendar-day"><div class="calendar-num">26</div><div class="add-box"><a href="#"><button type="button" class="close" name="Add Workout">+</button></a></div></td>
+                                <td class="calendar-day"><div class="calendar-num">27</div><div class="add-box"><a href="#"><button type="button" class="close" name="Add Workout">+</button></a></div></td>
+                                <td class="calendar-day"><div class="calendar-num">28</div><div class="add-box"><a href="#"><button type="button" class="close" name="Add Workout">+</button></a></div></td>
+                                <td class="calendar-day"><div class="calendar-num">29</div><div class="add-box"><a href="#"><button type="button" class="close" name="Add Workout">+</button></a></div></td>
+                                <td class="calendar-day"><div class="calendar-num">30</div><div class="add-box"><a href="#"><button type="button" class="close" name="Add Workout">+</button></a></div></td>
+                                <td class="calendar-day"><div class="calendar-num">31</div><div class="add-box"><a href="#"><button type="button" class="close" name="Add Workout">+</button></a></div></td>
+                                <td class="calendar-off"><div class="calendar-num">1</div><div class="add-box"><a href="#"><button type="button" class="close" name="Add Workout">+</button></a></div></td>
+                                <td class="calendar-tot"></td>
+                              </tr>
+
+                              <tr>
+
+                              </tr>
+                            </tbody>
+
+                        </table>
+
+                      </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+      </main>
+
+
+
+    </div>
+
+  </body>
+</html>

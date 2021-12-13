@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewpoint" content="width=device-width,initial-scale=1,maximum-scale=1">
+    <title>Leaderboards</title>
+
+    <link rel = "icon" href = "img/rpi_logo.png" type = "image/x-icon">
+    <link rel="stylesheet" href="leaderboards.css">
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+  </head>
+  <body>
+
+    <input type="checkbox" id="nav-toggle" >
+    <div class="sidebar">
+      <div class="sidebar-brand">
+        <h2><span class = "las la-shoe-prints"></span> <span>RPI XCTF</span></h2>
+      </div>
+
+      <div class="sidebar-menu">
+        <ul>
+          <li>
+            <a href="dashboard.html" class ="" ><span class = "las la-sitemap"></span>
+              <span>Dashboard</span></a>
+          </li>
+
+          <li>
+            <a href="calendar.html"><span class = "las la-calendar"></span>
+              <span>Calendar</span></a>
+          </li>
+
+          <li>
+            <a href="leaderboards.html" class ="active" ><span class = "las la-chart-bar"></span>
+              <span>Leaderboards</span></a>
+          </li>
+
+          <li>
+            <a href=""><span class = "las la-map"></span>
+              <span>Heatmap</span></a>
+          </li>
+
+          <li>
+            <a href=""><span class = "las la-brain"></span>
+              <span>Health Analytics</span></a>
+          </li>
+
+          <li>
+            <a href=""><span class = "las la-certificate"></span>
+              <span>Records</span></a>
+          </li>
+
+          <li>
+            <a href=""><span class = "las la-newspaper"></span>
+              <span>News</span></a>
+          </li>
+
+          <li>
+            <a href=""><span class = "las la-users"></span>
+              <span>Users</span></a>
+          </li>
+
+          <li>
+            <a href=""><span class = "las la-tools"></span>
+              <span>Settings</span></a>
+          </li>
+
+          <li>
+            <a href="login.html"><span class = "las la-undo"></span>
+              <span>Log Out</span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="main-content">
+      <header class="header_class">
+            <h2>
+              <label for="nav-toggle">
+                <span class = "las la-bars"></span>
+              </label>
+              Leaderboards
+            </h2>
+
+            <div class="search-wrapper">
+              <span class="las la-search"></span>
+              <input type="search" placeholder="Search Here" />
+            </div>
+
+            <div class="user-wrapper">
+              <img src="img/Gridley_Jared.jpg" width = "40px" height="40px" alt="">
+              <div>
+                  <h4>Jared Gridley</h4>
+                  <small>Athlete (2023)</small>
+              </div>
+            </div>
+      </header>
+
+      <main>
+        <div class="cards">
+          <div class="card-single">
+            <div class="">
+              <h1>49</h1><span>Activites Logged Today</span>
+            </div>
+            <div class="">
+              <span class="las la-route"></span>
+            </div>
+          </div>
+
+
+          <div class="card-single">
+            <div class="">
+              <h1>21.2</h1><span>Longest Run Today</span>
+            </div>
+            <div class="">
+              <span class="las la-fire-alt"></span>
+            </div>
+          </div>
+
+          <div class="card-single">
+            <div class="">
+              <h1>621</h1><span>Miles Ran Today</span>
+            </div>
+            <div class="">
+              <span class="las la-running"></span>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="recent-grid">
+            <div class="activites">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Leaderboard</h3>
+
+                        <!--<button>See all <span class="las la-arrow-right"></span></button>-->
+                    </div>
+
+                    <div class="selectors">
+                      <form action="" method="get">
+                        <select onchange="handleURL()" class="group-input" name="month">
+                          <option value="w4">Week 4: 1/25</option>
+                          <option value="w5">Week 5: 2/1</option>
+                        </select>
+
+                        <select onchange="handleURL()" class="group-input" name="year">
+                          <option value="2020">2020</option>
+                          <option value="2021">2021</option>
+                        </select>
+
+                        <select onchange="handleURL()" class="group-input" name="type">
+                          <option value="run">Run</option>
+                          <option value="bike">Bike</option>
+                          <option value="swim">Swim</option>
+                          <option value="elliptical">Elliptical</option>
+                          <option value="hike">Hike</option>
+                          <option value="Other">Other</option>
+                        </select>
+
+                        <select onchange="handleURL()" class="group-input" name="by">
+                          <option value="" selected>Total Distance</option>
+                          <option value="">Longest Workout</option>
+                          <option value="">Total Workout</option>
+                          <option value="">Average Run Distance</option>
+                        </select>
+
+
+                      </form>
+
+                    </div>
+
+                    <div class="card-body">
+                      <div class="table-responsive">
+
+                        <table width = "100%">
+                            <thead>
+                                <tr>
+                                  <td width="40px"></td>
+                                  <td>Athlete</td>
+                                  <td>Distance</td>
+                                  <td>Average</td>
+                                  <td>Longest</td>
+                                  <td>Runs</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td width="40px"> <img src="img/Lynch_John.jpg"  width="40px" height="40px" alt=""></td><td><a href="#">John Lynch</a></td>
+                                <td> 72.08</td>
+                                <td> 9.47 </td>
+                                <td> 17.2 </td>
+                                <td> 9 </td>
+                              </tr>
+
+                              <tr>
+                                <td width="40px"> <img src="img/Stevens_Daniel.jpg"  width="40px" height="40px" alt=""></td><td><a href="#">Dan Stevens</a></td>
+                                <td> 71.18</td>
+                                <td> 7.3 </td>
+                                <td> 16.72 </td>
+                                <td> 9 </td>
+                              </tr>
+
+                              <tr>
+                                <td width="40px"> <img src="img/Szabo_Owen.jpg"  width="40px" height="40px" alt=""></td><td><a href="#">Owen Szabo</a></td>
+                                <td> 70.01</td>
+                                <td> 12.3 </td>
+                                <td> 18.1 </td>
+                                <td> 8 </td>
+                              </tr>
+
+                              <tr>
+                                <td width="40px"> <img src="img/Gibbons_Jason.jpg"  width="40px" height="40px" alt=""></td><td><a href="#">Jason Gibbons</a></td>
+                                <td> 70.00</td>
+                                <td> 9.47 </td>
+                                <td> 17.9 </td>
+                                <td> 6 </td>
+                              </tr>
+
+                              <tr>
+                                <td width="40px"> <img src="img/Lecky_Matthew.jpg"  width="40px" height="40px" alt=""></td><td><a href="#">Matt Lecky</a></td>
+                                <td> 68.12</td>
+                                <td> 8.97 </td>
+                                <td> 14.01 </td>
+                                <td> 10 </td>
+                              </tr>
+
+                              <tr>
+                                <td width="40px"> <img src="img/Gridley_Jared.jpg"  width="40px" height="40px" alt=""></td><td><a href="#">Jared Gridley</a></td>
+                                <td> 68.02</td>
+                                <td> 7.58 </td>
+                                <td> 17.2 </td>
+                                <td> 9 </td>
+                              </tr>
+
+                              <tr>
+                                <td width="40px"> <img src="img/Piercy_Davis.jpg"  width="40px" height="40px" alt=""></td><td><a href="#">Davis Piercy</a></td>
+                                <td> 67.89</td>
+                                <td> 10.01 </td>
+                                <td> 17.2 </td>
+                                <td> 11 </td>
+                              </tr>
+
+                              <tr>
+                                <td width="40px"> <img src="img/Fazio_Ben.jpg"  width="40px" height="40px" alt=""></td><td><a href="#">Ben Fazio</a></td>
+                                <td> 65.04</td>
+                                <td> 6.59 </td>
+                                <td> 15.9 </td>
+                                <td> 10 </td>
+                              </tr>
+
+                              <tr>
+                                <td width="40px"> <img src="img/Thayer_Allison.jpg"  width="40px" height="40px" alt=""></td><td><a href="#">Allison Thayer</a></td>
+                                <td> 60.23</td>
+                                <td> 7.58 </td>
+                                <td> 16.56 </td>
+                                <td> 11 </td>
+                              </tr>
+
+                              <tr>
+                                <td width="40px"> <img src="img/Bolton_Karina.jpg"  width="40px" height="40px" alt=""></td><td><a href="#">Karina Bolton</a></td>
+                                <td> 58.69</td>
+                                <td> 9.52 </td>
+                                <td> 17.98 </td>
+                                <td> 9 </td>
+                              </tr>
+
+                              <tr>
+                                <td width="40px"> <img src="img/Craun_Jonathan.jpg"  width="40px" height="40px" alt=""></td><td><a href="#">Jonathan Craun</a></td>
+                                <td> 58.35</td>
+                                <td> 7.89 </td>
+                                <td> 16.01 </td>
+                                <td> 8 </td>
+                              </tr>
+
+                              <tr>
+                                <td width="40px"> <img src="img/Cooper_Jake.jpg"  width="40px" height="40px" alt=""></td><td><a href="#">Jake Cooper</a></td>
+                                <td> 56.98</td>
+                                <td> 7.99 </td>
+                                <td> 14.5 </td>
+                                <td> 8 </td>
+                              </tr>
+
+                              <tr>
+                                <td width="40px"> <img src="img/Conover_Greg.jpg"  width="40px" height="40px" alt=""></td><td><a href="#">Grey Conover</a></td>
+                                <td> 52.48</td>
+                                <td> 8.65 </td>
+                                <td> 15.1 </td>
+                                <td> 7 </td>
+                              </tr>
+
+                              <tr>
+                                <td width="40px"> <img src="img/Aspiras_Ethan.jpg"  width="40px" height="40px" alt=""></td><td><a href="#">Ethan Aspiras</a></td>
+                                <td> 48.65</td>
+                                <td> 8.99 </td>
+                                <td> 13.9 </td>
+                                <td> 9 </td>
+                              </tr>
+
+                              <tr>
+                                <td width="40px"> <img src="img/Crist_Jordan.jpg"  width="40px" height="40px" alt=""></td><td><a href="#">Jordan Crist</a></td>
+                                <td> 47.98</td>
+                                <td> 9.02 </td>
+                                <td> 15.2 </td>
+                                <td> 10 </td>
+                              </tr>
+
+                              <tr>
+                                <td width="40px"> <img src="img/Turner_Austin.jpg"  width="40px" height="40px" alt=""></td><td><a href="#">Austin Turner</a></td>
+                                <td> 16.89</td>
+                                <td> 9.47 </td>
+                                <td> 17.2 </td>
+                                <td> 14 </td>
+                              </tr>
+
+                            </tbody>
+
+                        </table>
+
+                      </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+      </main>
+
+
+
+    </div>
+
+  </body>
+</html>

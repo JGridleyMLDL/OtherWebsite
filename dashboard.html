@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewpoint" content="width=device-width,initial-scale=1,maximum-scale=1">
+    <title>Jared's Dashboard</title>
+
+    <link rel = "icon" href = "img/rpi_logo.png" type = "image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+  </head>
+  <body>
+
+    <input type="checkbox" id="nav-toggle" >
+    <div class="sidebar">
+      <div class="sidebar-brand">
+        <h2><span class = "las la-shoe-prints"></span> <span>RPI XCTF</span></h2>
+      </div>
+
+      <div class="sidebar-menu">
+        <ul>
+          <li>
+            <a href="dashboard.html" class ="active" ><span class = "las la-sitemap"></span>
+              <span>Dashboard</span></a>
+          </li>
+
+          <li>
+            <a href="calendar.html"><span class = "las la-calendar"></span>
+              <span>Calendar</span></a>
+          </li>
+
+          <li>
+            <a href="leaderboards.html"><span class = "las la-chart-bar"></span>
+              <span>Leaderboards</span></a>
+          </li>
+
+          <li>
+            <a href=""><span class = "las la-map"></span>
+              <span>Heatmap</span></a>
+          </li>
+
+          <li>
+            <a href=""><span class = "las la-brain"></span>
+              <span>Health Analytics</span></a>
+          </li>
+
+          <li>
+            <a href=""><span class = "las la-certificate"></span>
+              <span>Records</span></a>
+          </li>
+
+          <li>
+            <a href=""><span class = "las la-newspaper"></span>
+              <span>News</span></a>
+          </li>
+
+          <li>
+            <a href=""><span class = "las la-users"></span>
+              <span>Users</span></a>
+          </li>
+
+          <li>
+            <a href=""><span class = "las la-tools"></span>
+              <span>Settings</span></a>
+          </li>
+
+          <li>
+            <a href="login.html"><span class = "las la-undo"></span>
+              <span>Log Out</span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="main-content">
+      <header class="header_class">
+            <h2>
+              <label for="nav-toggle">
+                <span class = "las la-bars"></span>
+              </label>
+              Dashboard
+            </h2>
+
+            <div class="search-wrapper">
+              <span class="las la-search"></span>
+              <input type="search" placeholder="Search Here" />
+            </div>
+
+            <div class="user-wrapper">
+              <img src="img/Gridley_Jared.jpg" width = "40px" height="40px" alt="">
+              <div>
+                  <h4>Jared Gridley</h4>
+                  <small>Athlete (2023)</small>
+              </div>
+            </div>
+      </header>
+
+      <main>
+        <div class="cards">
+          <div class="card-single">
+            <div class="">
+              <h1>New Activity</h1><span>Create new log</span>
+            </div>
+            <div class="">
+              <span class="las la-heartbeat"></span>
+            </div>
+          </div>
+
+
+          <div class="card-single">
+            <div class="">
+              <h1>49</h1><span>Activities Logged Today</span>
+            </div>
+            <div class="">
+              <span class="las la-stopwatch"></span>
+            </div>
+          </div>
+
+          <div class="card-single">
+            <div class="">
+              <h1>2</h1><span>New Notifications</span>
+            </div>
+            <div class="">
+              <span class="las la-bell"></span>
+            </div>
+          </div>
+
+
+          <div class="card-single">
+            <div class="">
+              <h1>4</h1><span>Forms Remaining</span>
+            </div>
+            <div class="">
+              <span class="las la-check-circle"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="recent-grid">
+            <div class="activites">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Recent Activites</h3>
+
+                        <button>See all <span class="las la-arrow-right"></span></button>
+
+                    </div>
+
+
+                    <div class="card-body">
+                      <div class="table-responsive">
+
+                        <table width = "100%">
+                            <thead>
+                                <tr>
+                                  <td>Title</td>
+                                  <td>Duration</td>
+                                  <td>Athlete</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td> <span class="status blue"></span><a href="#">7am Rally</a></td>
+                                <td> 7.5 mi in 51:01</td>
+                                <td> <a href="#">Jason Gobbins</a></td>
+                              </tr>
+                              <tr>
+                                <td> <span class="status blue"></span><a href="#">Turf Turf Turf</a></td>
+                                <td> 7.4 mi in 50:22</td>
+                                <td>
+                                  <a href="#">Jared Gridley</a></td>
+                              </tr>
+                              <tr>
+                                <td> <span class="status blue"></span><a href="#">Championship Sunset</a></td>
+                                <td> 8 mi in 54:01</td>
+                                <td> <a href="#">Dan Stevens</a></td>
+                              </tr>
+                              <tr>
+                                <td> <span class="status blue"></span><a href="#">3 squirrels 1 nut </a></td>
+                                <td> 6.8 mi in 47:36</td>
+                                <td> <a href="#">Johnny Capobianco</a> </td>
+                              </tr>
+                              <tr>
+                                <td> <span class="status black"></span><a href="#">Morning Swim </a></td>
+                                <td> 40:00</td>
+                                <td> <a href="#">John Reed</a> </td>
+                              </tr>
+
+                              <tr>
+                                <td> <span class="status orange"></span><a href="#">Cornfields + Marthon</a></td>
+                                <td> 5.2 mi in 37:12</td>
+                                <td> <a href="#">Davis Piercy</a> </td>
+                              </tr>
+
+                              <tr>
+                                <td> <span class="status blue"></span><a href="#">Cornfields, Marthon and Turf</a></td>
+                                <td> 7.2 mi in 51:12</td>
+                                <td> <a href="#">Patrick Smyth</a> </td>
+                              </tr>
+
+                              <tr>
+                                <td> <span class="status blue"></span><a href="#">They call me Joker</a></td>
+                                <td> 7.8 mi in 54:12</td>
+                                <td> <a href="#">Owen Szabo</a> </td>
+                              </tr>
+
+                              <tr>
+                                <td> <span class="status blue"></span><a href="#">Owen killed the bat</a></td>
+                                <td> 7.8 mi in 54:12</td>
+                                <td> <a href="#">Ryan Humelsine</a> </td>
+                              </tr>
+
+
+                              <tr>
+                                <td> <span class="status purple"></span><a href="#">Early LR</a></td>
+                                <td> 17.2 mi in 1:53:22</td>
+                                <td> <a href="#">John Reed</a> </td>
+                              </tr>
+
+
+                              <tr>
+                                <td> <span class="status purple"></span> <a href="#">Bald LR</a></td>
+                                <td> 16.0 mi in 1:43:03</td>
+                                <td> <a href="#">Cory Kennedy</a> </td>
+                              </tr>
+
+
+                              <tr>
+                                <td> <span class="status purple"></span> <a href="#">7am LR</a></td>
+                                <td> 16.5 mi in 1:51:01</td>
+                                <td> <a href="#">Austin Turner</a></td>
+                              </tr>
+                              <tr>
+                                <td> <span class="status purple"></span> <a href="#">Bald Mountain</a></td>
+                                <td> 16.4 mi in 1:50:22</td>
+                                <td>
+                                  <a href="#">Jared Gridley</a></td>
+                              </tr>
+                              <tr>
+                                <td> <span class="status purple"></span> <a href="#">CLR</a></td>
+                                <td> 18 mi in 2:05:01</td>
+                                <td> <a href="#">Dan Stevens</a></td>
+                              </tr>
+                              <tr>
+                                <td> <span class="status orange"></span><a href="#">Morning Yog</a></td>
+                                <td> 6.8 mi in 47:36</td>
+                                <td> <a href="#">Grey Conover</a> </td>
+                              </tr>
+
+                            </tbody>
+
+                        </table>
+
+                      </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="notifications">
+              <div class="card">
+                  <div class="card-header">
+                      <h3>Notifications</h3>
+
+                      <button>See all <span clas="las la-arrow-right"></span></button>
+
+                  </div>
+
+                  <div class="card-body">
+
+                    <div class="post">
+                        <div class="info">
+                          <img src="img/Lynch_John.jpg"  width="40px" height="40px" alt="">
+                          <div class="">
+                            <h4>Getting Tested</h4>
+                            <small>John Lynch</small>
+                          </div>
+                        </div>
+                        <div class="contact">
+                          <span class="las la-user-circle"></span>
+                          <span class="las la-comment"></span>
+                          <span class="las la-phone"></span>
+                        </div>
+                    </div>
+
+                    <div class="post">
+                        <div class="info">
+                          <img src="img/Lynch_John.jpg"  width="40px" height="40px" alt="">
+                          <div class="">
+                            <h4>Workout Today</h4>
+                            <small>John Lynch</small>
+                          </div>
+                        </div>
+                        <div class="contact">
+                          <span class="las la-user-circle"></span>
+                          <span class="las la-comment"></span>
+                          <span class="las la-phone"></span>
+                        </div>
+
+                    </div>
+
+                    <div class="post">
+                        <div class="info">
+                          <img src="img/Thayer_Allison.jpg"  width="40px" height="40px" alt="">
+                          <div class="">
+                            <h4>New Steeple Drills</h4>
+                            <small>Allison Thayer</small>
+                          </div>
+                        </div>
+                        <div class="contact">
+                          <span class="las la-user-circle"></span>
+                          <span class="las la-comment"></span>
+                          <span class="las la-phone"></span>
+                        </div>
+                    </div>
+
+                    <div class="post">
+                        <div class="info">
+                          <img src="img/Lynch_John.jpg"  width="40px" height="40px" alt="">
+                          <div class="">
+                            <h4>Weekly Plan Posted</h4>
+                            <small>John Lynch</small>
+                          </div>
+                        </div>
+                        <div class="contact">
+                          <span class="las la-user-circle"></span>
+                          <span class="las la-comment"></span>
+                          <span class="las la-phone"></span>
+                        </div>
+                    </div>
+
+                    <div class="post">
+                        <div class="info">
+                          <img src="img/Szabo_Owen.jpg"  width="40px" height="40px" alt="">
+                          <div class="">
+                            <h4>Too much beet juice?</h4>
+                            <small>Owen Szabo</small>
+                          </div>
+                        </div>
+                        <div class="contact">
+                          <span class="las la-user-circle"></span>
+                          <span class="las la-comment"></span>
+                          <span class="las la-phone"></span>
+                        </div>
+                    </div>
+
+                    <div class="post">
+                        <div class="info">
+                          <img src="img/Fazio_Ben.jpg"  width="40px" height="40px" alt="">
+                          <div class="">
+                            <h4>Shoes</h4>
+                            <small>Ben Fazio</small>
+                          </div>
+                        </div>
+                        <div class="contact">
+                          <span class="las la-user-circle"></span>
+                          <span class="las la-comment"></span>
+                          <span class="las la-phone"></span>
+                        </div>
+                    </div>
+
+
+                    <div class="post">
+                        <div class="info">
+                          <img src="img/Lynch_John.jpg"  width="40px" height="40px" alt="">
+                          <div class="">
+                            <h4>Snow Day Practice</h4>
+                            <small>John Lynch</small>
+                          </div>
+                        </div>
+                        <div class="contact">
+                          <span class="las la-user-circle"></span>
+                          <span class="las la-comment"></span>
+                          <span class="las la-phone"></span>
+                        </div>
+                    </div>
+
+
+                    <div class="post">
+                        <div class="info">
+                          <img src="img/Bolton_Karina.jpg"  width="40px" height="40px" alt="">
+                          <div class="">
+                            <h4>Stationary Bikes</h4>
+                            <small>Karina Bolton</small>
+                          </div>
+                        </div>
+                        <div class="contact">
+                          <span class="las la-user-circle"></span>
+                          <span class="las la-comment"></span>
+                          <span class="las la-phone"></span>
+                        </div>
+                    </div>
+
+                    <div class="post">
+                        <div class="info">
+                          <img src="img/Lynch_John.jpg"  width="40px" height="40px" alt="">
+                          <div class="">
+                            <h4>Dec 12 Weekly Plan</h4>
+                            <small>John Lynch</small>
+                          </div>
+                        </div>
+                        <div class="contact">
+                          <span class="las la-user-circle"></span>
+                          <span class="las la-comment"></span>
+                          <span class="las la-phone"></span>
+                        </div>
+                    </div>
+
+                    <div class="post">
+                        <div class="info">
+                          <img src="img/Lynch_John.jpg"  width="40px" height="40px" alt="">
+                          <div class="">
+                            <h4>Winter Weather</h4>
+                            <small>John Lynch</small>
+                          </div>
+                        </div>
+                        <div class="contact">
+                          <span class="las la-user-circle"></span>
+                          <span class="las la-comment"></span>
+                          <span class="las la-phone"></span>
+                        </div>
+                    </div>
+
+
+                  </div>
+                </div>
+            </div>
+
+        </div>
+      </main>
+
+
+
+    </div>
+
+  </body>
+</html>
