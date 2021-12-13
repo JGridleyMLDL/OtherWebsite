@@ -372,7 +372,7 @@ tr{
     display: none;
   }
 
-  .calendar-day .cal-link{
+  .cal-link{
     font-size: 10px;
   }
 
@@ -436,7 +436,7 @@ tr{
     align-items: center;
   }
 
-  .calendar-day .cal-link{
+  .cal-link{
     font-size: 10px;
   }
 /*
